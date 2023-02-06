@@ -1,0 +1,267 @@
+/*General*/
+:root{
+  --header-color: hsl(0, 0%, 100%);
+  --app-background: hsl(270, 20%, 96%);
+  --submit-button-background: hsl(271, 36%, 24%);
+  --radio-button-outline-color: hsl(289, 100%, 72%);
+  --main-font-size: 16px;
+  --font-weight-1: 400;
+  --font-weight-2: 500;
+  --font-weight-3: 700;
+  --main-color-gradient: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  --main-color-gradient-reverse: linear-gradient( 90deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  --sub-heading-top-app-color: hsl(276, 100%, 81%);
+  --chat-on-the-left-color: hsl(276, 55%, 52%);
+  --chat-on-the-right-color: hsl(271, 15%, 43%);
+  --placeholder-text-color: hsl(206, 6%, 79%);
+  --main-heading-color: hsl(271, 36%, 24%);
+  --paragraph-color: hsl(270, 7%, 64%);
+  --border-size-radius: 20px;
+
+}
+
+html{
+  font-size: var(--main-font-size);
+  font-family: Rubik;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--app-background);
+  font-family: 'Rubik', sans-serif;
+}
+/*General*/
+
+
+
+/*Illustratuin*/
+.illustration-ball{
+  width:500px;
+  height:550px;
+  background: var(--main-color-gradient);
+  border-radius: 0 0 100% 100%;
+  position: absolute;
+  right: 50%;
+  z-index: -1;
+  top: 0;
+}
+/*Illustratuin*/
+
+
+
+
+
+/*Mobile Shape*/
+.mobile-shape{
+  width:280px;
+  height:580px;
+  border:20px solid white;
+  border-radius:50px;
+  margin: 40px auto;
+  background-color: var(--app-background);
+  position: relative;
+  box-shadow: 1px 1px 10px rgb(177, 177, 177);
+}
+
+.mobile-camera{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:50%;
+  height:30px;
+  background-color:var(--header-color);
+  border-radius: 0 0 var(--border-size-radius) var(--border-size-radius);
+}
+
+/*P2*/
+/*P2*/
+/*P2*/
+.mobile-header{
+  background: var(--main-color-gradient);
+  border-radius: var(--border-size-radius) var(--border-size-radius) 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:15%;
+  color: var(--header-color);
+}
+
+.mobile-header > div {
+  height:40px;
+  font-size: .7rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top:5px;
+}
+
+.options{
+  width:10%;
+}
+
+.user-info{
+  width:60%;
+  justify-content: space-evenly;
+  left:10px;
+}
+
+.user-info span{
+  font-size:.5rem;
+  letter-spacing: .01rem;
+  color: var(--sub-heading-top-app-color);
+}
+/*P2*/
+/*P2*/
+/*P2*/
+
+.mobile-body{
+  padding:1em .5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.message{
+  max-width:60%;
+  font-size: .6rem;
+  margin-bottom: 10px;
+  border-radius:10px;
+  padding:.6em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-left{
+  align-self: flex-start;
+  background-color: gainsboro;
+  color: var(--chat-on-the-left-color);
+}
+
+.message-right{
+  align-self: flex-end;
+  background-color: var(--header-color);
+  color: var(--chat-on-the-right-color);
+}
+
+.message-img{
+  background: none;
+  min-width: 50%;
+}
+
+.sent-img{
+  max-width: 30px;
+  border-radius:10px;
+}
+
+.offer{
+  background: var(--main-color-gradient-reverse);
+  color: rgb(223, 223, 223);
+  width:75%;
+  margin:5px 0;
+  padding:.8em 1em;
+  border-radius: 20px 20px 20px 0;
+  font-size: .7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.offer-details{
+  display: flex;
+  justify-content: space-between;
+  width:68%;
+}
+
+.cost > p {
+  color: white;
+  font-size: .9rem;
+  font-weight: var(--font-weight-3);
+}
+
+.type-message{
+  width:95%;
+  background-color: white;
+  align-self: center;
+  margin-top: 10px;
+  border-radius:20px;
+  display: flex;
+  height:40px;
+  justify-content: space-between;
+  align-items: center;
+  padding:.2em .2em;
+}
+
+.type-message p {
+  margin-left: 10px;
+  font-size: .7rem;
+}
+
+.send{
+  margin-right: 20px;
+  color: white;
+  padding:8px;
+  border-radius: 100%;
+  background-color: var(--submit-button-background);
+  position: relative;
+  left:19px;
+}
+/*Mobile Shape*/
+
+
+
+
+
+/*main*/
+main{
+  width:80%;
+  margin:50px auto;
+  text-align: center;
+}
+
+main h1 {
+  margin-bottom:10px;
+  color: var(--main-heading-color);
+}
+
+main p {
+  color: var(--main-heading-color);
+  line-height:1.7em;
+  color: var(--paragraph-color);
+}
+/*main*/
+
+
+
+
+@media screen and (min-width: 1000px) {
+  body{
+    overflow: hidden;
+  }
+
+  .illustration-ball{
+    right: 70%;
+  }
+
+  .container{
+    display: flex;
+    width:60%;
+    margin: 20px auto;
+  }
+
+  .mobile-shape{
+    transform: scale(.8);
+    bottom:60px;
+  }
+
+  main{
+    width:50%;
+    position: relative;
+    top: 100px;
+    text-align: left;
+  }
+}
