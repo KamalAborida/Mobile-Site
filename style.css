@@ -244,18 +244,22 @@ main p {
   }
 
   .illustration-ball{
-    right: 70%;
+    right: 73%;
+    width: 600px;
+    height: 80vh;
   }
 
   .container{
     display: flex;
-    width:60%;
-    margin: 20px auto;
+    width:85%;
+    margin: 20% auto;
+    position: relative;
   }
 
   .mobile-shape{
-    transform: scale(.8);
     bottom:60px;
+    margin-right:50px;
+    width:330px;
   }
 
   main{
@@ -263,5 +267,39 @@ main p {
     position: relative;
     top: 100px;
     text-align: left;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  body{
+    overflow: hidden;
+  }
+
+  .illustration-ball{
+    right: 75%;
+    width: 800px;
+    height: 80vh;
+  }
+
+  .container{
+    display: flex;
+    width:85%;
+    margin: 13% auto;
+    position: relative;
+  }
+
+  .mobile-shape{
+    bottom:60px;
+    margin-right:50px;
+    width:330px;
+  }
+
+  main{
+    width:50%;
+    position: relative;
+    top: 100px;
+    text-align: left;
+    font-size: 1.5rem;
   }
 }
