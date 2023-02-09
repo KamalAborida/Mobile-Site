@@ -238,7 +238,7 @@ main p {
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   body{
     overflow: hidden;
   }
@@ -270,7 +270,7 @@ main p {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1440px) {
   body{
     overflow: hidden;
   }
@@ -284,8 +284,7 @@ main p {
   .container{
     display: flex;
     width:85%;
-    margin: 12% auto;
-    position: relative;
+    margin: 5% auto;
   }
 
   .mobile-shape{
@@ -299,40 +298,6 @@ main p {
     position: relative;
     top: 100px;
     text-align: left;
-  }
-}
-
-
-@media screen and (min-width: 1600px) {
-  body{
-    overflow: hidden;
-  }
-
-  .illustration-ball{
-    right: 75%;
-    width: 800px;
-    height: 80vh;
-  }
-
-  .container{
-    display: flex;
-    width:85%;
-    margin: 13% auto;
-    position: relative;
-  }
-
-  .mobile-shape{
-    bottom:60px;
-    margin-right:50px;
-    width:330px;
-  }
-
-  main{
-    width:50%;
-    position: relative;
-    top: 100px;
-    text-align: left;
-    font-size: 1.5rem;
   }
 }
 
@@ -351,7 +316,6 @@ main p {
     display: flex;
     width:85%;
     margin: 13% auto;
-    position: relative;
   }
 
   .mobile-shape{
