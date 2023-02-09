@@ -270,6 +270,38 @@ main p {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  body{
+    overflow: hidden;
+  }
+
+  .illustration-ball{
+    right: 73%;
+    width: 600px;
+    height: 80vh;
+  }
+
+  .container{
+    display: flex;
+    width:85%;
+    margin: 12% auto;
+    position: relative;
+  }
+
+  .mobile-shape{
+    bottom:60px;
+    margin-right:50px;
+    width:330px;
+  }
+
+  main{
+    width:50%;
+    position: relative;
+    top: 100px;
+    text-align: left;
+  }
+}
+
 
 @media screen and (min-width: 1600px) {
   body{
@@ -301,5 +333,39 @@ main p {
     top: 100px;
     text-align: left;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 2500px) {
+  body{
+    overflow: hidden;
+  }
+
+  .illustration-ball{
+    right: 77%;
+    width: 800px;
+    height: 80vh;
+  }
+
+  .container{
+    display: flex;
+    width:85%;
+    margin: 13% auto;
+    position: relative;
+  }
+
+  .mobile-shape{
+    transform: scale(1.5);
+    bottom:60px;
+    margin-right:50px;
+    width:330px;
+  }
+
+  main{
+    width:50%;
+    position: relative;
+    top: 100px;
+    text-align: left;
+    font-size: 2rem;
   }
 }
